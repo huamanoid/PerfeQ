@@ -66,7 +66,6 @@
     console.log("saved");
     localStorage.setItem('saved', JSON.stringify(toDoListArray));
 
-
   });
   
 
@@ -121,32 +120,33 @@
     let day         = d.getDate();
     let month       = d.getMonth() + 1;
     let year        = d.getFullYear();
-    let date        = String(day);
+
+    let date        = (String(day).length==1 ? '0'+String(day): String(day));
     date = date + "/";
-    date = date + String(month);
-    date = date + "/" ;
-    date = date + String(year);
+    date = date + (String(month).length==1 ? '0'+String(month): String(month));
+    // date = date + "/" ;
+    // date = date + String(year);
     
     return String(date);
   }
   
   function addItemToDOM(itemId, toDoItem, createdDateString) { 
     
-    htmlCode = "<label class='todo' data-id=" + itemId + "><input class='todo__state' type='checkbox' /><svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 200 25' class='todo__icon'><use xlink:href='#todo__line' class='todo__line'></use><use xlink:href='#todo__box' class='todo__box'></use><use xlink:href='#todo__check' class='todo__check'></use> <use xlink:href='#todo__circle' class='todo__circle'></use></svg><div class='todo__text'>" + toDoItem +"</div></label>"
+    htmlCode = "<label class='todo' data-id=" + itemId + "><input class='todo__state' type='checkbox' /><svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 200 25' class='todo__icon'><use xlink:href='#todo__line' class='todo__line'></use><use xlink:href='#todo__box' class='todo__box'></use><use xlink:href='#todo__check' class='todo__check'></use> <use xlink:href='#todo__circle' class='todo__circle'></use></svg><div class='todo__text'>" + toDoItem +" <span style='float:right; color:#94d0cc'>"+createdDateString+"</span></div></label>"
     listItem2.insertAdjacentHTML('beforeend', htmlCode);
   }
 
 
   function addItemToBringItOnList(itemId, toDoItem, createdDateString) {    
 
-    htmlCode = "<label class='todo' data-id=" + itemId + "><input class='todo__state' type='checkbox' /><svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 200 25' class='todo__icon'><use xlink:href='#todo__line' class='todo__line'></use><use xlink:href='#todo__box' class='todo__box'></use><use xlink:href='#todo__check' class='todo__check'></use> <use xlink:href='#todo__circle' class='todo__circle'></use></svg><div class='todo__text'>" + toDoItem +"</div></label>"
+    htmlCode = "<label class='todo' data-id=" + itemId + "><input class='todo__state' type='checkbox' /><svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 200 25' class='todo__icon'><use xlink:href='#todo__line' class='todo__line'></use><use xlink:href='#todo__box' class='todo__box'></use><use xlink:href='#todo__check' class='todo__check'></use> <use xlink:href='#todo__circle' class='todo__circle'></use></svg><div class='todo__text'>" + toDoItem +"<span style='float:right; color:#94d0cc'>"+createdDateString+"</span></div></label>"
     listItem.insertAdjacentHTML('beforeend', htmlCode);
   }
   
   function addItemToArray(itemId, toDoItem, createdDate, createdDateString) {
     // add item to array as an object with an ID so we can find and delete it later
     toDoListArray.push({ itemId, toDoItem, createdDate, createdDateString});
-    console.log(toDoListArray)
+    // console.log(toDoListArray)
   }
   
   function removeItemFromDOM(id) {
