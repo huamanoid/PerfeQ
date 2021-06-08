@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "PerfeQ",
+    "version": "1.0.0",
+    "description": "A Perfeqt tool to tackle false positives in problem solving.",
+    "icons": {
+      "128": "icon.png",
+      "48": "icon.png",
+      "16": "icon.png"
+    },
+    "action": {
+      "default_icon": "icon.png",
+      "default_popup": "index.html"
+    },
+    "permissions": ["scripting", "tabs", "activeTab"]
+  }

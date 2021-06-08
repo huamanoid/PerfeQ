@@ -30,7 +30,7 @@
 
     var d           = new Date();
     let currentDate = (d.getTime()/(1000));
-    const timeDiff  = 5; //in miliseconds
+    const timeDiff  = 14*(3600*24); //in seconds, 14 days to pop the queue
 
     toDoListArray.forEach(item=> {
         if( currentDate - item.createdDate >= timeDiff && !displayedItem.includes(item.itemId)){
