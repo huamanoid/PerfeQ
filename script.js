@@ -9,21 +9,30 @@
     toDoListArray = JSON.parse(savedObject);
 
   // ui variables
-  const form  = document.querySelector("#formAll"); 
-  const input = form.querySelector(".form__input");
-  // const button = form.querySelector('.button')
-  // const ul    = document.querySelector(".toDoList"); 
-  const bring = document.querySelector("#bringItOnList");
-  // const bul   = document.querySelector("#bringItOnList")
-  const listItem = document.querySelector("#listItemContainer");
+  const form      = document.querySelector("#formAll"); 
+  const input     = form.querySelector(".form__input");
+  const bring     = document.querySelector("#bringItOnList");
+  const listItem  = document.querySelector("#listItemContainer");
   const listItem2 = document.querySelector("#listItemContainer2");
-  const heading   = document.querySelector('.heading')
+  const problems  = document.querySelector('#problems')
 
   
   populateToDoList();
 
 
     // event listeners
+
+    problems.addEventListener('click', e=>{
+      var p = document.querySelector('#listItemContainer2');
+      // console.log(p.style.display);
+      if(p.style.display=="none")
+          p.style.display = "block";
+      else
+          p.style.display = "none";
+    })
+
+
+
   bring.addEventListener('click', e=> {
         // prevent default behaviour - Page reload
     e.preventDefault();
