@@ -22,8 +22,8 @@ when the critical concepts are harder to recall from memory and challenges our p
 <img src="icon.png" width="20"> minimal
 
 <p float="left">
-  <img src="images/image1.png" height="450" />
-  <img src="images/image2.PNG" height="450"  />
+  <img src="images/image1.png" height="400" />
+  <img src="images/image2.PNG" height="400"  />
 </p>
 
 
