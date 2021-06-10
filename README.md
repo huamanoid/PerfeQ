@@ -13,13 +13,19 @@ It let users submit such problems or concepts and presents them after a period o
 when the critical concepts are harder to recall from memory and challenges our problem-solving skills.
 
 
-- available as chrome extension 
-- works offline
-- lightweight
-- minimal
+<img src="icon.png" width="20"> available as chrome extension 
 
-[](https://github.com/huamanoid/PerfeQ/blob/main/images/image1.png)
-[](https://github.com/huamanoid/PerfeQ/blob/main/images/image2.png)
+<img src="icon.png" width="20"> works offline
+
+<img src="icon.png" width="20"> lightweight
+
+<img src="icon.png" width="20"> minimal
+
+<p float="left">
+  <img src="images/image1.png" height="450" />
+  <img src="images/image2.PNG" height="450"  />
+</p>
+
 
 ### Installation
 
