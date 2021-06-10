@@ -18,8 +18,8 @@ when the critical concepts are harder to recall from memory and challenges our p
 - lightweight
 - minimal
 
-[](https://github.com/huamanoid/PerfeQ/images/image1.png)
-[](https://github.com/huamanoid/PerfeQ/images/image2.png)
+[](https://github.com/huamanoid/PerfeQ/blob/main/images/image1.png)
+[](https://github.com/huamanoid/PerfeQ/blob/main/images/image2.png)
 
 ### Installation
 
