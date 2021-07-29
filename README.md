@@ -35,10 +35,3 @@ goto => chrome://extensions/
 Enable Developer mode toggle
 Click on Load unpacked and select the PerfeQ folder
 ```
-
-
-
-
-### License
-
-MIT
