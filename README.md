@@ -4,13 +4,9 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Oftentimes when we encounter a problem that we're unable to solve, 
-and after taking help of hints and solution, we get a sense of feeling of completion and can move on.
-But the same problem in another form, end up perturbing us in future.
+Often, individuals encounter problems they struggle to solve. Seeking help through hints and solutions can provide a sense of completion, allowing them to move forward. However, similar problems may resurface in different forms, causing further perturbation.
 
-PerfeQ was developed to tackle this issue of false-positive belief of grasp in the concept.
-It let users submit such problems or concepts and presents them after a period of two weeks 
-when the critical concepts are harder to recall from memory and challenges our problem-solving skills.
+PerfeQ was developed to address this issue of false-positive belief in grasping concepts. It enables users to submit such problems or concepts, presenting them again after a two-week period. This timing ensures that critical concepts are harder to recall from memory, thereby challenging users' problem-solving skills and mitigating the risk of false confidence.
 
 
 <img src="icon.png" width="20"> available as chrome extension 
